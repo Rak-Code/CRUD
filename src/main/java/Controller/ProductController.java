@@ -26,6 +26,12 @@ public class ProductController {
 		return productServices.getAllProducts();
 	}
 	
+	@GetMapping("/hello")
+	public String Hello(){
+		
+		return "Hello";
+	}
+	
 	@PostMapping("/")
 	public Product createProduct(@RequestBody Product product) {
 		
