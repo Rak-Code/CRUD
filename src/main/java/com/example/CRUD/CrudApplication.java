@@ -5,6 +5,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.ComponentScan;
 
 @SpringBootApplication
+@ComponentScan(basePackages = {"com.example.CRUD", "Controller", "Entity","Services"})
 public class CrudApplication {
 
 	public static void main(String[] args) {

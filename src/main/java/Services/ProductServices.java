@@ -25,4 +25,16 @@ public class ProductServices {
 		
 	}
 	
+  public Product updateProduct(int id, Product product) {
+    for (int i = 0; i < products.size(); i++) {
+        if (products.get(i).getId() == id) {
+            product.setId(id); 
+            products.set(i, product); 
+            return product;
+        }
+    }
+    return null; 
+}
+
+	
 }
